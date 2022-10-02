@@ -1,5 +1,6 @@
-import DataGrowth from '@/components/dataGrowth';
 import Image from 'next/image';
+
+import DataGrowth from '@/components/dataGrowth';
 
 export default function HomePage() {
   return (
@@ -11,7 +12,7 @@ export default function HomePage() {
             className='text-[48px] font-[700] leading-[60px]'
             convert
           />
-          <Image src='/icon/up-icon.png' width={33} height={54} />
+          <Image src='/icon/up-icon.png' width={33} height={54} alt='up-icon' />
         </div>
         <div>
           <DataGrowth
@@ -19,7 +20,12 @@ export default function HomePage() {
             className='text-[48px] font-[700] leading-[60px]'
           />
           <span className='text-[32px] font-[700] leading-[40px]'>%</span>
-          <Image src='/icon/down-icon.png' width={33} height={54} />
+          <Image
+            src='/icon/down-icon.png'
+            width={33}
+            height={54}
+            alt='down-icon'
+          />
         </div>
 
         <div className='ml-[88px]'>
@@ -29,7 +35,7 @@ export default function HomePage() {
             className='text-[48px] font-[700] leading-[60px]'
           />
           <span className='text-[32px] font-[700] leading-[40px]'>%</span>
-          <Image src='/icon/up-icon.png' width={33} height={54} />
+          <Image src='/icon/up-icon.png' width={33} height={54} alt='up-icon' />
         </div>
       </section>
     </main>

@@ -1,6 +1,7 @@
 import gsap, { Linear } from 'gsap';
 import * as _ from 'lodash';
 import { useEffect, useRef } from 'react';
+
 import clsxm from '@/lib/clsxm';
 
 export type IProps = {
@@ -11,7 +12,9 @@ export type IProps = {
 };
 
 const DataGrowth = ({ targetVal, className, decimal = 0, convert }: IProps) => {
+  // eslint-disable-next-line
   const gsapId = useRef<any>();
+  // eslint-disable-next-line
   const span: any = useRef<HTMLDivElement>(null);
   // 每三位以 , 进行分隔
   const convertDigital = (val: number | string) => {
